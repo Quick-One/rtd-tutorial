@@ -8,16 +8,13 @@ build:
 sphinx:
   fail_on_warning: true
 
-python:
-   install:
-   - requirements: docs/requirements.txt
-
 
 python:
   # Install our python package before building the docs
   install:
-    - method: pip
-      path: .
+  - requirements: docs/requirements.txt
+  - method: pip
+    path: .
 
 formats:
   - pdf
