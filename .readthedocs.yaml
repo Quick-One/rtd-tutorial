@@ -13,8 +13,7 @@ python:
   install:
     - method: pip
       path: .
-    - method: pip
-      path: furo
+
 formats:
   - pdf
   - epub
